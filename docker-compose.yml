@@ -6,4 +6,6 @@ services:
     tty: true
     volumes:
       - ./hello.ook:/app/hello.ook
+      - ./output.ook:/app/output.ook
       - ./ook.py:/app/ook.py
+      - ./text_to_ook.py:/app/text_to_ook.py
