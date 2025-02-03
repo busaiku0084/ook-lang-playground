@@ -65,26 +65,6 @@ Ook. Ook. Ook! Ook.
 | `Ook! Ook?` | `[`  | ループ開始 |
 | `Ook? Ook!` | `]`  | ループ終了 |
 
-
-## 実行コマンド
-
-```bash
-# コンテナ起動
-docker-compose up -d
-```
-```bash
-# コンテナにアタッチせず実行
-docker-compose exec ook-lang python3 /usr/local/bin/ook.py /app/hello.ook
-
-# コンテナに入って実行
-docker-compose exec ook-lang /bin/sh
-python3 /usr/local/bin/ook.py /app/hello.ook
-```
-```bash
-# コンテナ停止
-docker-compose down
-```
-
 ## **📝 その他**
 - 公式 Ook! の仕様は [ここ](https://esolangs.org/wiki/Ook!) で確認できます。
 - もし **`hello.ook` の単語数が奇数** だったら、間違いなくエラーになります！🚨
