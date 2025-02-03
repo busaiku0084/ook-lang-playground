@@ -1,0 +1,9 @@
+services:
+  ook-lang:
+    build: .
+    container_name: ook-runner
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./hello.ook:/app/hello.ook
+      - ./ook.py:/app/ook.py
